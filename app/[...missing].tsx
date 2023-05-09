@@ -1,16 +1,22 @@
+import { useRoute } from '@react-navigation/native';
 import { Link, Stack } from 'expo-router';
 import { StyleSheet } from 'react-native';
 
+import { MonoText } from '../components/StyledText';
 import { Text, View } from '../components/Themed';
 
 export default function NotFoundScreen() {
+  const route = useRoute()
+
   return (
     <>
       <Stack.Screen options={{ title: 'Oops!' }} />
       <View style={styles.container}>
         <Text style={styles.title}>This screen doesn't exist.</Text>
+        <Text>You are attempting to view</Text>
+        <MonoText>path: {route.path}</MonoText>
 
-        <Link href="/" style={styles.link}>
+        <Link href="/home" style={styles.link}>
           <Text style={styles.linkText}>Go to home screen!</Text>
         </Link>
       </View>

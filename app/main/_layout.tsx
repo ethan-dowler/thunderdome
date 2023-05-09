@@ -23,10 +23,10 @@ export default function TabLayout() {
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
       }}>
       <Tabs.Screen
-        name="index"
+        name="fight"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Fight',
+          tabBarIcon: ({ color }) => <TabBarIcon name="shield" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -44,10 +44,17 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="grow"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Grow',
+          tabBarIcon: ({ color }) => <TabBarIcon name="wrench" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="character"
+        options={{
+          title: 'Character',
+          tabBarIcon: ({ color }) => <TabBarIcon name="user" color={color} />,
         }}
       />
     </Tabs>
