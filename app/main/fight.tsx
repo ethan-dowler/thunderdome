@@ -6,9 +6,9 @@ import { SafeAreaView, Text, View } from '../../components/Themed';
 export default function TabOneScreen() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
+      <Text style={styles.title}>Fight</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/main/index.tsx" />
+      <EditScreenInfo path="app/main/fight.tsx" />
     </SafeAreaView>
   );
 }

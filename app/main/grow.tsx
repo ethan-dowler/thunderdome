@@ -8,7 +8,7 @@ export default function TabTwoScreen() {
     <SafeAreaView style={styles.container}>
       <Text style={styles.title}>Grow</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/main/two.tsx" />
+      <EditScreenInfo path="app/main/grow.tsx" />
     </SafeAreaView>
   );
 }
